@@ -1,0 +1,63 @@
+grupa_projekt_homepage:
+    path:     /
+    defaults: { _controller: GrupaProjektBundle:Index:showIndex }
+
+
+grupa_projekt_supercars:
+    path:     /{slug}
+    defaults: { _controller: GrupaProjektBundle:Supercars:show }
+
+grupa_projekt_admin_dodaj:
+    path:     /admin/dodaj
+    defaults: { _controller: GrupaProjektBundle:Admin:dodajFilm }
+
+grupa_projekt_admin_usun:
+    path:     /admin/usun
+    defaults: { _controller: GrupaProjektBundle:Admin:usunFilm }
+
+grupa_projekt_admin_panel:
+    path:     /admin/panel
+    defaults: { _controller: GrupaProjektBundle:Admin:panel }
+
+grupa_projekt_logowanie:
+    path:     /logowanie
+    defaults: { _controller: GrupaProjektBundle:Index:logowanie }
+grupa_projekt_recenzja:
+    path:    /zalogowany/recenzja
+    defaults: { _controller: GrupaProjektBundle:Recenzja:showRecenzjaLog }
+
+grupa_projekt_pokaz_koszyk:
+    path:     /Koszyk
+    defaults: { _controller: GrupaProjektBundle:Koszyk:pokazKoszyk }
+
+grupa_projekt_show_zamowienia:
+    path:     /Zamowienia
+    defaults: { _controller: GrupaProjektBundle:Zamowienia:showZamowienia }
+
+grupa_projekt_filmy_f1:
+    path:     /f1
+    defaults: { _controller: GrupaProjektBundle:Filmy:f1 }
+
+grupa_projekt_filmy_f2:
+    path:     /f2
+    defaults: { _controller: GrupaProjektBundle:Filmy:f2 }
+
+grupa_projekt_filmy_f3:
+    path:     /f3
+    defaults: { _controller: GrupaProjektBundle:Filmy:f3 }
+
+grupa_projekt_filmy_f4:
+    path:     /f4
+    defaults: { _controller: GrupaProjektBundle:Filmy:f4 }
+
+grupa_projekt_filmy_f5:
+    path:     /f5
+    defaults: { _controller: GrupaProjektBundle:Filmy:f5 }
+
+grupa_projekt_filmy_f6:
+    path:     /f6
+    defaults: { _controller: GrupaProjektBundle:Filmy:f6 }
+
+grupa_projekt_filmy_f7:
+    path:     /f7
+    defaults: { _controller: GrupaProjektBundle:Filmy:f7 }

@@ -1,0 +1,27 @@
+{% extends "GrupaProjektBundle::menu.html.twig" %}
+
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel panel-info pole-tekstowe">
+				<div class="panel-heading">
+						<div class="header">
+							<h1 class="panel-title">RECENZJA</h1><br>
+						</div>
+						<div>
+							<form action="#" method="post">
+								<textarea class="form-control" name="recenzja" placeholder="Rozszerzalne pole tekstowe. Wypełnij recenzją filmu, a następnie kliknij przycisk wyślij"></textarea>
+
+								<input type="submit" class="btn btn-primary" value="Wyślij">
+								<span class="glyphicon glyphicon-send"></span>
+							</form>
+
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+{% endblock %}

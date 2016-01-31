@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+		<style>
+			@font-face {
+		    	font-family: "robotoregular";
+		    	src: url('Roboto-Regular-webfont.ttf') format('truetype');
+		    	font-weight: normal;
+		    	font-style: normal;
+			}
+			
+			body {background-color: #343e54;
+				font-family: "robotoregular", Tahoma, Arial, sans-serif;
+				color: #666;
+			}
+			h1#witam {color: #e16f00;}
+			header {width:100%;}
+			h1, h2 {width:75%;}
+			div#logowanie {width:210px;
+						height:225px;
+						margin: -200px 0px 0px 700px;
+			}
+			div#szukaj {width: 90px;
+				height: 200px;
+				margin:-265px 0px 0px 950px;
+			}
+			div.jumbotron {background-color: #1e90ff;
+				margin: 50px 0px 0px 0px;
+				width:100%;
+				height:400px;
+			}
+				legend {color: #e16f00;}
+			fieldset {width:210px;
+					height:225px;
+					border:none;
+					background-color: #00baff;
+					color: #fff700;
+					text-align: center;
+					padding: 5px 5px 100px 0px;
+			}
+			fieldset>ol {list-style: none;}
+			fieldset input {display:block;}
+			fieldset, input, legend {border-radius: 5px;
+				-moz-border-radius: 5px;
+			}
+			nav#pasek {
+				background-color: #ffffff;
+				height: 40px;
+				width: 100%;
+				margin:75px 0px 0px 0px;
+			}
+			h2 {margin:10px 0px 0px 0px;}
+			h2#tostrona {color:#fff700;}
+			font#czerwony {color:red;}
+			font#bialy {color:white;}
+			nav#stopka {background-color:#00baff;
+				width:100%;
+				height:100%;}
+			footer {color:#00baff;
+					width: 100%;
+					height: 200px;
+					clear:both;
+					margin:200px 0px 0px 0px;
+				}
+				p#copyright {color:#fff700;}
+		</style>
+
+		<title>Projekt usability</title>
+	</head>
+	<body>
+		<header>
+			<h1 id="witam">Witam na stronie</h1> <h1><font id="czerwony"> S</font><font id="bialy">u</font><font id="czerwony">p</font><font id="bialy">e</font><font id="czerwony">r</font><font id="bialy">c</font><font id="czerwony">a</font><font id="bialy">r</font><font id="czerwony">s</font></h1>
+			<img src="/Sc.png" width="300" height="150">
+			<div align="right" id="logowanie">
+			<form method="post" action="/login">
+				<fieldset id="login">
+					<legend>Logowanie</legend>
+					<ol>
+						<li>
+							<label for="username">Nazwa użytkownika</label>
+							<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+							<input type="text" id="username" name="username" placeholder="Podaj nazwę użytkownika">
+						</li>
+						<li>
+							<label for="password">Hasło</label>
+							<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-log-in"></i></span>
+							<input type="password" id="password" name="password" value="" autocomplete="off" placeholder="Podaj hasło"/>
+						</li>
+						<br>
+						<li>
+							<input type="submit" class="btn btn-primary" value="Zaloguj">
+						</li>
+					</ol>
+				</fieldset>
+			</form>
+		</div>
+		<div class="jumbotron">
+			<h2><font id="czerwony"> S</font><font id="bialy">u</font><font id="czerwony">p</font><font id="bialy">e</font><font id="czerwony">r</font><font id="bialy">c</font><font id="czerwony">a</font><font id="bialy">r</font><font id="czerwony">s</font></h2> <h2 id="tostrona"> to strona o supersamochodach</h2>
+			<p><a href="/learnmore" class="btn btn-primary btn-lg" role="button">Dowiedz się więcej</a></p>
+		</div>
+			<div align="right" id="szukaj">
+				<form action="/search">
+					<div class="row" align="right">
+						<div class="col-lg-4">
+							<div class="input-group">
+								<input type="text" class="form-control">
+								<span class="input-group-btn">
+									<button class="btn btn-primary">Szukaj</button>
+								</span>
+							</div>
+						</div>
+				<a href="/advancedsearch">Zaawansowane</a>
+					</div>
+				</form>
+			</div>
+			<nav id="pasek">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="active"><a href="http://projekt-usability.prv.pl/"><i class="glyphicon glyphicon-home"></i> <b>Strona główna</b></a></li>
+					<li role="presentation" class="active"><a href="/faq"><i class="glyphicon glyphicon-scale"></i> <b>FAQ</b></a></li>
+					<li role="presentation" class="active"><a href="/forum"><i class="glyphicon glyphicon-edit"></i> <b>Forum</b></a></li>
+					<li role="presentation" class="active"><a href="/contact"><i class="glyphicon glyphicon-earphone"></i> <b>Kontakt</b></a></li>
+					<li role="presentation" class="active"><a href="/help"><i class="glyphicon glyphicon-question-sign"></i> <b>Pomoc</b></a></li>
+
+				</ul>
+			</nav>
+		</header>
+
+		<footer>
+			<nav id="stopka">
+				<a href="/about"><b>O stronie</b></a>
+				<a href="/contact"><b>Kontakt</b></a>
+
+				<br>
+				<i class="glyphicon glyphicon-copyright-mark"></i> <p id="copyright"><b>2015 by GF. Wszelkie prawa zastrzeżone.</b></p>
+				<br>
+			</nav>
+
+		</footer>
+	</body>
+</html>

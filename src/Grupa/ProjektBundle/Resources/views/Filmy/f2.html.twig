@@ -1,0 +1,41 @@
+{% extends "GrupaProjektBundle::layout.html.twig" %}
+
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="panel panel-default">
+				<div class="thumbnail">
+					<img src="{{asset('bundles/grupaprojekt/images/Skazani na Shawshank.jpg')}}" class="img-thumbnail" style="width: 200px; height: 300px;">
+					<h3>Skazani na Shawshank</h3>
+					<p>Film nakręcony na podstawie książki mistrza horrorów Stephena Kinga. Andy Dufresne (Tim Robbins), dobrze zarabiający bankier z Nowej Anglii, zostaje oskarżony o podwójne zabójstwo - swojej żony i jej kochanka. Uparcie twierdzi, że jest niewinny, ale dzięki niezbitym dowodom zostaje skazany na podwójne dożywocie w więzieniu Shawshank. Shawshank rządzi hipokryta i fanatyk biblijny, naczelnik Norton (Bob Gunton), a wraz z nim sadystyczni strażnicy. Andy już po kilku dniach poznaje brutalną, więzienną rzeczywistość, ale dzięki wrodzonej inteligencji, sprytowi oraz pomocy przyjaciela Ellisa Boyda "Reda" Reddinga (Morgan Freeman) udaje mu się zachować nadzieję, która pozwoli dokonać zemsty.
+					</p>	
+					<p>Lista Aktorów:<br>
+						Tim Robbins, Morgan Freeman, William Sadler
+					</p>
+					<p>Cena wypożyczenia: 40 PLN </p>
+					<div class="caption">
+						<p><a href="#" class="btn btn-lg btn-primary" role="button">Wypożycz</a></p>
+						<p><a href="{{ path ('grupa_projekt_recenzja')}}" class="btn btn-lg btn-primary" role="button">Dodaj recenzje</a></p>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="col-md-4">
+			<div class="panel panel-primary login-panel">
+			<nav style="text-align:center">			
+				<a><div class="embed-responsive embed-responsive-16by9">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Crx0JKcSt-U" frameborder="0" allowfullscreen></iframe>
+				</a></div>
+			</nav>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+
+
+ {% endblock %}

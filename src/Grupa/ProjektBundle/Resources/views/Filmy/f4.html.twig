@@ -1,0 +1,41 @@
+{% extends "GrupaProjektBundle::layout.html.twig" %}
+
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="panel panel-default">
+				<div class="thumbnail">
+					<img src="{{asset('bundles/grupaprojekt/images/Pulp Fiction.jpg')}}" class="img-thumbnail" style="width: 200px; height: 300px;">
+					<h3>Pulp Fiction</h3>
+					<p>Płatni mordercy, Jules (Samuel L. Jackson) i Vincent (John Travolta), dostają zlecenie, by odzyskać z rąk przypadkowych rabusiów tajemniczą walizkę bossa mafii. Nie dość tego, Vincent dostaje kolejną robotę - na czas nieobecności gangstera w mieście ma zaopiekować się jego poszukującą wrażeń żoną Mią (Uma Thurman). Vincent i Jules niespodziewanie wpadają po uszy, gdy przypadkowo zabijają zakładnika. Kłopoty ma też podupadły bokser (Bruce Willis), który otrzymał dużą sumę za przegranie swojej walki. Walkę jednak wygrywa, a Los Angeles staje się od tej chwili dla niego za małe. Specjaliści od mokrej roboty będą mieli co robić...
+					</p>	
+					<p>Lista Aktorów:<br>
+						John Travolta Samuel L Jackson Uma Thurman Bruce Willis Tim Roth
+					</p>
+					<p>Cena wypożyczenia: 100 PLN </p>
+					<div class="caption">
+						<p><a href="#" class="btn btn-lg btn-primary" role="button">Wypożycz</a></p>
+						<p><a href="{{ path ('grupa_projekt_recenzja')}}" class="btn btn-lg btn-primary" role="button">Dodaj recenzje</a></p>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="col-md-4">
+			<div class="panel panel-primary login-panel">
+			<nav style="text-align:center">			
+				<a><div class="embed-responsive embed-responsive-16by9">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/5ZAhzsi1ybM" frameborder="0" allowfullscreen></iframe>
+				</a></div>
+			</nav>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+
+
+ {% endblock %}

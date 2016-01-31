@@ -1,0 +1,51 @@
+{% extends "GrupaProjektBundle::layout.html.twig" %}
+{% block content %}
+<title>Rejestracja</title>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<div class="panel panel-primary" style="z-index:0; width:500px; height:250px ">
+	<!-- <div class="container"> -->
+	
+		<div class="panel-heading" style="width:525px; height:770px">
+			<h1 class="panel-title">Proszę się zarejestrować</h1>
+		
+		<br>
+			
+	<form class="fos_user_registration_register form-horizontal" action="{{ path('fos_user_registration_register') }}" method="POST" {{form_enctype(form)}}>
+		<div class="well"> 
+		<div class="input-group" style="z-index:1">
+		<input type="email" id="fos_user_registration_form_email" name="fos_user_registration_form[email]" class="form-control" placeholder="{{ 'adres email'|trans }}"
+			aria-describedby="basic-addon1" value="" required="required" /><span class="input-group-addon" id="basic-addon1">@</span>
+		</div>
+		<br>
+		<div class="input-group" style="z-index:1">
+		<input type="text" id="fos_user_registration_form_username" name="fos_user_registration_form[username]" class="form-control" placeholder="{{ 'nazwa filmomaniaka'|trans }}" aria-describedby="basic-addon1" value="" required="required" pattern=".{3,}" /><span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i> min 3 znaki</span>
+		</div>
+		<br>
+		<div class="input-group" style="z-index:1">
+		<input type="password" id="fos_user_registration_form_plainPassword_first" name="fos_user_registration_form[plainPassword][first]" class="form-control" placeholder="{{ 'podaj hasło'|trans }}" required="required" /><span class="input-group-addon" id="basic-addon1">1<sup>st</sup></span>
+		</div>
+		<br>
+		<div class="input-group" style="z-index:1">
+		<input type="password" id="fos_user_registration_form_plainPassword_second" name="fos_user_registration_form[plainPassword][second]" class="form-control" placeholder="{{ 'powtórz hasło'|trans }}" required="required" /><span class="input-group-addon" id="basic-addon1">2<sup>nd</sup></span>
+		</div>
+		</div>
+		<input type="hidden" id="fos_user_registration_form__token" name="fos_user_registration_form[_token]" value="{{ form._token.vars.value }}" />
+		<input type="submit" id="_submit" name="_submit" class="btn btn-lg btn-primary btn-block" value="{{ 'Zarejestruj się'|trans }}" />
+
+	</form>
+	
+	<br>
+	<img src="http://www.podpiselektroniczny.kalisz.pl/wp-content/uploads/2013/05/klucz.jpg" width="500" height="400"/>
+	
+		</div>
+</div>
+
+{% endblock %}

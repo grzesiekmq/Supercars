@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+		<link rel="shortcut icon" type="image/x-icon" href="{{ asset('bundles/grupaprojekt/images/favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('bundles/grupaprojekt/css/style.css') }}">
+		<script type="text/javascript" src="{{ asset('bundles/grupaprojekt/js/slajd.js') }}"></script>
+		
+
+		<title>Projekt usability</title>
+	</head>
+	<body data-spy="scroll" data-target=".container-fluid">
+		<script src="{{ asset('bundles/grupaprojekt/js/scrollReveal.min.js') }}"></script>
+		<script>
+		window.sr = new scrollReveal();
+		</script>
+		<header>
+		<div class="container-fluid">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="active"><a href="{{ path ('grupa_projekt_homepage') }}"><i class="glyphicon glyphicon-home"></i> <b>Strona główna</b></a></li>
+					<li role="presentation" class"active"><a class="sc" href="#supercars"><b id="zolty">Supercars</b></a></li>
+					<li role="presentation" class="active"><a href="../web/faq"><i class="glyphicon glyphicon-scale"></i> <b>FAQ</b></a></li>
+					<li role="presentation" class="active"><a href="http://projekt-usability.prv.pl/forum/"><i class="glyphicon glyphicon-edit"></i> <b>Forum</b></a></li>
+					<li role="presentation" class="active"><a href="#kontakt"><i class="glyphicon glyphicon-earphone"></i> <b>Kontakt</b></a></li>
+					<li role="presentation" class="active"><a href="../web/help"><i class="glyphicon glyphicon-question-sign"></i> <b>Pomoc</b></a></li>
+					<li role="presentation" class"active"><a class="fb" href="https://www.facebook.com/01super.cars/?ref=aymt_homepage_panel"><b id="bialy">Sprawdź na Facebooku</b></a></li>
+					<li role="presentation" class"active"><a href=""><b>Komentarze <br> ( + Propozycje poprawy strony)</b></a></li>
+					<li role="presentation" class"active"><a href=""><b>Sprawdź jak ta strona powstawała</b></a>
+					<li role="presentation" class"active"><a href=""><b>Opinie</b></a></li>
+					<div align="right" id="szukaj">
+				<form action="../web/search">
+					<div class="row" align="right">
+						<div class="col-lg-4">
+							<div class="input-group">
+								<input type="text" class="form-control">
+								<span class="input-group-btn">
+									<button class="btn btn-primary">Szukaj</button>
+								</span>
+							</div>
+						</div>
+				<a href="../web/advancedsearch">Zaawansowane</a>
+					</div>
+				</form>
+			</div>
+			
+					
+				</ul>
+			
+			</div>
+			<br>
+		
+			<img src="{{ asset('bundles/grupaprojekt/images/Sc.png') }}" width="300" height="150">
+			<h1 id="witam">Witam na stronie</h1> 
+			<div id="s1"><h1><font id="czerwony"> S</font><font id="bialy">u</font><font id="czerwony">p</font><font id="bialy">e</font><font id="czerwony">r</font><font id="bialy">c</font><font id="czerwony">a</font><font id="bialy">r</font><font id="czerwony">s</font></h1>
+			</div>
+			
+			<div align="right" id="logowanie">
+			<form method="post" action="/login">
+				<fieldset id="login">
+					<legend>Logowanie</legend>
+					<ol>
+						<li>
+							<label for="username">Nazwa użytkownika</label>
+							<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+							<input type="text" id="username" name="username" placeholder="Podaj nazwę użytkownika">
+						</li>
+						<li>
+							<label for="password">Hasło</label>
+							<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-log-in"></i></span>
+							<input type="password" id="password" name="password" value="" autocomplete="off" placeholder="Podaj hasło"/>
+						</li>
+						<br>
+						<li>
+							<input type="submit" class="btn btn-primary" value="Zaloguj">
+						</li>
+					</ol>
+				</fieldset>
+			</form>
+			</div>
+		
+		<div class="jumbotron">
+			<h2 id="supercars">A</h2>
+			<h2><font id="czerwony"> S</font><font id="bialy">u</font><font id="czerwony">p</font><font id="bialy">e</font><font id="czerwony">r</font><font id="bialy">c</font><font id="czerwony">a</font><font id="bialy">r</font><font id="czerwony">s</font></h2> <h2 id="tostrona"> to strona o supersamochodach</h2>
+			<div id="corvette"><img src="http://www.dreamcarsite.com/photos/cars01/2013-chevrolet-corvette-z06/2013-chevrolet-corvette-z06-h.jpg">
+			</div>
+			<a href="#learnmore"><p data-sr="move 50px" class="btn btn-primary btn-lg" role="button">Dowiedz się więcej</p></a>
+			
+		</div>
+		</header>
+		<section>
+		<h2 id="learnmore">A</h2>
+		<h3>Najdziksze bestie</h3>
+	Zawartością strony jest kolekcja samochodów sportowych.<br>
+	Spośród ogromnej ilości dostępnych modeli aut wybrałem ,<br>
+	które według mnie są najlepsze pod względem wizualnym.
+	</div>
+	<br>
+	<p class="btn btn-primary" role="button">Dowiedz się jeszcze więcej (marki, modele)</p>
+	</section>
+			
+			<br>
+			
+
+			
+			
+			
+
+
+		<aside>
+			<a href=""><b>Zmień język</b></a><br>
+			<a href=""><b>Przejdź do Google</b></a><br>
+			<a href=""><b>Dodaj stronę do zakładek</b></a>
+		</aside>
+
+		
+	
+
+
+
+
+		
+
+ 
+				
+			
+			
+		
+		
+
+		<h5 align="right" style="font-weight:bold; padding:450px 5px 0px 0px; box-sizing:border-box"><a href="#">Powrót do góry</h5>
+		<h1 align="right" style="margin:0px -100px 0px 350px"><span class="glyphicon glyphicon-circle-arrow-up"></span></h1></a>
+
+		<footer>
+			<nav id="stopka">
+				<h2 id="kontakt">A</h2>
+				<a href="../web/about"><b>O stronie</b></a><br>
+				<img src="http://www.myiconfinder.com/uploads/iconsets/4da56c6e4199ee90672a68bb2f18884f-Browser.png" height="500" width="700">
+				<a href="../web/contact"><b>Kontakt</b></a>
+
+				<br>
+				<i class="glyphicon glyphicon-copyright-mark"></i> <p id="copyright"><b>2015 by GF. Wszelkie prawa zastrzeżone.</b></p>
+				<br>
+				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
+				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
+				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
+				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
+				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
+				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
+				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
+				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
+			
+
+
+			</nav>
+
+		</footer>
+
+		</body>
+

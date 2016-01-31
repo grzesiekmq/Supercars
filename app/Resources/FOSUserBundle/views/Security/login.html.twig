@@ -1,0 +1,68 @@
+{% extends "GrupaProjektBundle::layout.html.twig" %}
+
+
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="panel panel-primary login-panel">
+				<div class="panel-heading">
+					<div class="header-login-form">
+						<h1 class="panel-title"> FORMULARZ LOGOWANIA </h1>
+					</div>
+					<div class="login-form">
+						<form class="form-signin" action="{{ path('fos_user_security_check') }}" method="post">
+							<div class="well">
+							<input type="hidden" name="_csrf_token" value="{{ csrf_token ('authenticate') }}" />
+							<div class="input-group" style="z-index:1">
+							<input type="username" id="username" name="_username" class="form-control" placeholder="{{ 'nazwa uzytkownika'|trans }}"
+								aria-describedby="basic-addon1" value="" required="required" /><span class="input-group-addon" id="basic-addon1">np. Jasio</span>
+							</div>
+							<br>
+							<input type="password" id="password" name="_password" class="form-control" placeholder="{{ 'podaj hasło'|trans }}" required="required" />
+							</div>
+							<input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+							<label for="remember_me">{{ 'Pamiętaj mnie'|trans }}</label>
+						
+							<input type="submit" id="_submit" name="_submit" class="btn btn-lg btn-primary btn-block" value="{{ 'Zaloguj się'|trans }}" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<img src="http://www.podpiselektroniczny.kalisz.pl/wp-content/uploads/2013/05/klucz.jpg" style="width: 450px; height: auto;" />
+		</div>
+	</div>
+</div>
+
+<!-- <div class="panel panel-primary" style="z-index:0; width:300px; height:300px ">
+		<div class="panel-heading" style="width:300px; height:300px">
+			<h1 class="panel-title">Proszę się zalogować</h1>
+		
+		<br>
+	 FORMULARZ LOGOWANIA 
+	<form class="form-signin" action="{{ path('fos_user_security_check') }}" method="post">
+		<div class="well">
+		<input type="hidden" name="_csrf_token" value="{{ csrf_token ('authenticate') }}" />
+		<div class="input-group" style="z-index:1">
+		<input type="username" id="username" name="_username" class="form-control" placeholder="{{ 'nazwa uzytkownika'|trans }}"
+			aria-describedby="basic-addon1" value="" required="required" /><span class="input-group-addon" id="basic-addon1">np. Jasio</span>
+		</div>
+		<br>
+		<input type="password" id="password" name="_password" class="form-control" placeholder="{{ 'podaj hasło'|trans }}" required="required" />
+		</div>
+		<input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+		<label for="remember_me">{{ 'Pamiętaj mnie'|trans }}</label>
+	</div>
+		<input type="submit" id="_submit" name="_submit" class="btn btn-lg btn-primary btn-block" value="{{ 'Zaloguj się'|trans }}" />
+	</form>
+
+<div class="container">
+	<img src="http://www.podpiselektroniczny.kalisz.pl/wp-content/uploads/2013/05/klucz.jpg" width="500px" height="400px"/>
+</div> 
+</div> -->
+{% endblock %}
+
+
+

@@ -1,0 +1,41 @@
+{% extends "GrupaProjektBundle::layout.html.twig" %}
+
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="panel panel-default">
+				<div class="thumbnail">
+					<img src="{{asset('bundles/grupaprojekt/images/Nietykalni.jpg')}}" class="img-thumbnail" style="width: 200px; height: 300px;">
+					<h3>Nietykalni</h3>
+					<p>Ta historia zdarzyła się naprawdę. Sparaliżowany na skutek wypadku milioner zatrudnia do pomocy i opieki młodego chłopaka z przedmieścia, który właśnie wyszedł z więzienia. Zderzenie dwóch skrajnie różnych światów daje początek szeregowi niewiarygodnych przygód i przyjaźni, która czyni ich... nietykalnymi.
+					</p>	
+					<p>Lista Aktorów:<br>
+						Francois Cluzet, Omar Sy
+					</p>
+					<p>Cena wypożyczenia: 60 PLN </p>
+					<div class="caption">
+						<p><a href="#" class="btn btn-lg btn-primary" role="button">Wypożycz</a></p>
+						<p><a href="{{ path ('grupa_projekt_recenzja')}}" class="btn btn-lg btn-primary" role="button">Dodaj recenzje</a></p>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="col-md-4">
+			<div class="panel panel-primary login-panel">
+			<nav style="text-align:center">			
+				<a><div class="embed-responsive embed-responsive-16by9">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/UppQaEffPOI" frameborder="0" allowfullscreen></iframe>
+				</a></div>
+			</nav>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+
+
+ {% endblock %}

@@ -1,0 +1,94 @@
+			@font-face {
+		    	font-family: "robotoregular";
+		    	src: url('Roboto-Regular-webfont.ttf') format('truetype');
+		    	font-weight: normal;
+		    	font-style: normal;
+			}
+			
+			body {background-color: #343e54;
+				font-family: "robotoregular", Tahoma, Arial, sans-serif;
+				color: #666;
+				position: relative;
+			}
+			h1#witam {color: #e16f00;
+					margin: -131px 0px 0px 310px;}
+
+			header {width:100%;}
+			h1, h2 {width:75%;}
+			
+			a:focus {border-bottom: 2px solid #fff;}
+			
+			a.fb {background-color: #3b5998;}	
+			a.sc {background-color: #1e90ff;}
+			b#bialy	{color: white;}
+			b#zolty {color: yellow;}
+			h2#supercars {color: transparent;}
+			h2#learnmore {color: transparent;}
+
+			div#logowanie {width:210px;
+						height:225px;
+						margin: -100px 0px 0px 900px;
+			}
+			div#szukaj {width: 90px;
+				height: 200px;
+				margin: 0px 0px 0px 1185px;
+			}
+			div.col-lg-4 {width: 250px;}
+			div.jumbotron {background-color: #1e90ff;
+				margin: 0px 0px 0px 0px;
+				width:100%;
+				height:400px;
+			}
+			legend {color: #e16f00;}
+			fieldset {width:210px;
+					height:225px;
+					border:none;
+					background-color: #00baff;
+					color: #fff700;
+					text-align: center;
+					padding: 5px 5px 100px 0px;
+
+			}
+			fieldset>ol {list-style: none;}
+			fieldset input {display:block;
+					color:#666;
+			}
+			fieldset, input, legend {border-radius: 5px;
+				-moz-border-radius: 5px;
+			}
+			input#username {width:100px;}
+			
+			div.container-fluid {position:fixed;
+			 					z-index:2;
+			 					width:1450px;
+			 					height:100px;
+			}
+			ul.nav.nav-pills {width:1450px;
+				height:100px;}
+
+			aside {height: 150px;
+				width: 200px;
+				background-color: orange;
+				margin: -700px 0px 0px -5px;
+				text-align: center;}
+			div#corvette {margin: -150px 0px 0px 450px;}
+
+			h2 {margin:10px 0px 0px 0px;}
+			h2#tostrona {color:#fff700;}
+			font#czerwony {color:red;}
+			div#s1 {margin: 0px 0px 0px 310px;}
+			font#bialy {color:white;}
+			
+			h2#kontakt {color:transparent;}
+			nav#stopka {background-color:#00baff;
+				width:100%;
+				height:100%;}
+			footer {color:#00baff;
+					width: 100%;
+					height: 700px;
+					clear:both;
+					margin:200px 0px 0px 0px;
+				}
+				p#copyright {color:#fff700;}
+				p#home {color:white;}
+		

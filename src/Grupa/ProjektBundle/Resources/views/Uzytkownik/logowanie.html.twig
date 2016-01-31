@@ -1,0 +1,44 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+		{% block title %}
+		<title>Logowanie</title>
+		{% endblock %}
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<div class="container">
+<h2 class="form-signin-heading">Proszę się zalogować</h2>
+<br>
+<form class="form-signin" action="#" method="POST" width="200" height="200">
+
+	<div class="input-group">
+	<input type="email" id="username" name="_username" class="form-control" placeholder="{{ 'adres email'|trans }}"
+		aria-describedby="basic-addon1" value="" required="required" /><span class="input-group-addon" id="basic-addon1">@</span>
+	</div>
+
+<input type="password" id="password" name="_password" class="form-control" placeholder="{{ 'podaj hasło'|trans }}" required="required" />
+
+<div class="checkbox">
+<label>
+<input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+</label>
+<label for="remember_me">{{ 'Pamiętaj mnie'|trans }}</label>
+</div>
+<br>
+<input type="submit" id="_submit" name="_submit" class="btn btn-lg btn-primary btn-block" value="{{ 'Zaloguj się'|trans }}" />
+<br>
+</form>
+<br>
+<img src="http://www.podpiselektroniczny.kalisz.pl/wp-content/uploads/2013/05/klucz.jpg" width="500" height="500"/>
+</div>
+{% endblock %}

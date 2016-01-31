@@ -1,0 +1,41 @@
+{% extends "GrupaProjektBundle::layout.html.twig" %}
+
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="panel panel-default">
+				<div class="thumbnail">
+					<img src="{{asset('bundles/grupaprojekt/images/Ojciec Chrzestny.jpg')}}" class="img-thumbnail" style="width: 200px; height: 300px;">
+					<h3>Ojciec chrzestny III</h3>
+					<p>W części trzeciej "Ojca chrzestnego", Don Michael Corleone (Al Pacino) jest już człowiekiem starym. Zalegalizował swe interesy, zerwał z niebezpiecznym trybem życia. Jest szanowanym obywatelem, nie skąpiącym dolarów na szlachetne cele, za co szczególnie go ceni najwyższa hierarchia kościelna. Ale przed przeszłością nie ma ucieczki. Jego życie naznaczone zostało zbrodnią na zawsze. Al Pacino jest równie prawdziwy jako szacowny biznesmen, zmęczony demon zbrodni i załamany ojciec. Nie pasuje do świata, w którym liczy się coś więcej niż pieniądze (choć twórcy pesymistycznie oceniają jego istnienie) ani do tego, w którym rację mają tylko ludzie z karabinami. Jego czas minął bezpowrotnie.
+					</p>	
+					<p>Lista Aktorów:<br>
+						Al Pacino Diane Keaton
+					</p>
+					<p>Cena wypożyczenia: 80 PLN </p>
+					<div class="caption">
+						<p><a href="#" class="btn btn-lg btn-primary" role="button">Wypożycz</a></p>
+						<p><a href="{{ path ('grupa_projekt_recenzja')}}" class="btn btn-lg btn-primary" role="button">Dodaj recenzje</a></p>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="col-md-4">
+			<div class="panel panel-primary login-panel">
+			<nav style="text-align:center">			
+				<a><div class="embed-responsive embed-responsive-16by9">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/z8h3LVb8cl8" frameborder="0" allowfullscreen></iframe>
+				</a></div>
+			</nav>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+
+
+ {% endblock %}

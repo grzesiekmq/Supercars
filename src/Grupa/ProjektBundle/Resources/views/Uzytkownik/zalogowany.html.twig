@@ -1,0 +1,32 @@
+
+{% block menu %}
+	<head>
+		<title>Witamy!</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	</head>
+
+		<h1>Witamy! Zostałeś zalogowany jako: {{ app.user.username }}</h1>
+		<ul class="nav nav-tabs">
+  			<li role="presentation" class="active"><a href="http://v-ie.uek.krakow.pl/~s118000/app_dev.php/">Home <span class="glyphicon glyphicon-home"></span></a></li>
+  			<li role="presentation" class="active"><a href="#">Zamówienia </a></li>
+		    <li role="presentation"><a href="#">Koszyk
+  				<span class="glyphicon glyphicon-shopping-cart"></span>
+				<span class="badge"></span></a>
+			</li>
+			<li role="presentation" class="active"><a href="http://v-ie.uek.krakow.pl/~s118000/app_dev.php/zalogowany/recenzja">Dodaj recenzję <span class="glyphicon glyphicon-eye-open"></span></a>
+			</li>
+			
+  		</ul>
+  		
+  		<br>
+		<a href="http://v-ie.uek.krakow.pl/~s118000/app_dev.php/logout"><input type="submit" class="btn btn-primary" value="Wyloguj się"></a>
+		<span class="glyphicon glyphicon-log-out"></span>	
+		
+{% endblock %}

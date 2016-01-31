@@ -1,0 +1,41 @@
+{% extends "GrupaProjektBundle::layout.html.twig" %}
+
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="panel panel-default">
+				<div class="thumbnail">
+					<img src="{{asset('bundles/grupaprojekt/images/Służące.jpg')}}" class="img-thumbnail" style="width: 200px; height: 300px;">
+					<h3>Służące</h3>
+					<p>Akcja filmu toczy się w stanie Mississippi w latach 60. W roli głównej występuje Emma Stone (gwiazda hitu kinowego "Zombieland") grająca Skeeter, dziewczynę z dobrego domu z południa, która po studiach marzy o karierze pisarki. Niespodziewanie wywraca do góry nogami życie swoich przyjaciół i mieszkańców rodzinnego miasteczka, gdy postanawia przeprowadzić wywiad z czarnoskórą służącą najzamożniejszych rodzin w okolicy. Nominowana do Oscara Viola Davis w roli Albeen decyduje się ujawnić ciemne sekrety życia czarnoskórej mniejszości. Ze zwierzeń rodzi się przyjaźń. Okazuje się, że przyjaciółki mają sobie dużo do opowiedzenia. Zarówno one, jak i inni mieszkańcy miasteczka są świadkami zmieniających się czasów i obyczajów.
+					</p>	
+					<p>Lista Aktorów:<br>
+						Emma Stone Viola Davis
+					</p>
+					<p>Cena wypożyczenia: 25 PLN </p>
+					<div class="caption">
+						<p><a href="#" class="btn btn-lg btn-primary" role="button">Wypożycz</a></p>
+						<p><a href="{{ path ('grupa_projekt_recenzja')}}" class="btn btn-lg btn-primary" role="button">Dodaj recenzje</a></p>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="col-md-4">
+			<div class="panel panel-primary login-panel">
+			<nav style="text-align:center">			
+				<a><div class="embed-responsive embed-responsive-16by9">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/HFMVDlrLdxc" frameborder="0" allowfullscreen></iframe>
+				</a></div>
+			</nav>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+
+
+ {% endblock %}

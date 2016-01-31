@@ -1,0 +1,43 @@
+{% extends "GrupaProjektBundle::layout.html.twig" %}
+
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="panel panel-default">
+				<div class="thumbnail">
+					<img src="{{asset('bundles/grupaprojekt/images/milczenie.jpg')}}" class="img-thumbnail" style="width: 200px; height: 300px;">
+					<h3>Milczenie owiec</h3>
+					<p>Agentce FBI, Clarise Starling, zostaje powierzona sprawa "Buffalo Billa", seryjnego mordercy wyróżniającego się szczególnym okrucieństwem wobec swych ofiar, które odziera ze skóry. Sprawę pomaga jej rozwikłać inny, niezwykle inteligentny i niebezpieczny morderca - Hannibal Lecter - pacjent więziennego centrum psychiatrycznego. Hannibal jest zauroczony Clarice, a w zamian za odkrywanie przez nią części swej przeszłości, kawałek po kawałku odkrywa dla niej tajemnicę morderstw.
+					</p>	
+					<p>Lista Aktorów:<br>
+						Anthony Hopkins 
+						Jodie Foster 
+						Ted Levine
+					</p>
+					<p>Cena wypożyczenia: 150 PLN </p>
+					<div class="caption">
+						<p><a href="#" class="btn btn-lg btn-primary" role="button">Wypożycz</a></p>
+						<p><a href="{{ path ('grupa_projekt_recenzja')}}" class="btn btn-lg btn-primary" role="button">Dodaj recenzje</a></p>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="col-md-4">
+			<div class="panel panel-primary login-panel">
+			<nav style="text-align:center">			
+				<a><div class="embed-responsive embed-responsive-16by9">
+					<iframe width="260" height="215" src="https://www.youtube.com/embed/v4HAWRqSTyI" frameborder="0" allowfullscreen></iframe>
+				</a></div>
+			</nav>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+
+
+ {% endblock %}
