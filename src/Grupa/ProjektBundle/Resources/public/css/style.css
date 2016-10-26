@@ -1,94 +1,271 @@
-			@font-face {
-		    	font-family: "robotoregular";
-		    	src: url('Roboto-Regular-webfont.ttf') format('truetype');
-		    	font-weight: normal;
-		    	font-style: normal;
-			}
-			
-			body {background-color: #343e54;
-				font-family: "robotoregular", Tahoma, Arial, sans-serif;
-				color: #666;
-				position: relative;
-			}
-			h1#witam {color: #e16f00;
-					margin: -131px 0px 0px 310px;}
+@font-face {
+    font-family: "robotoregular";
+    src: url('Roboto-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-			header {width:100%;}
-			h1, h2 {width:75%;}
-			
-			a:focus {border-bottom: 2px solid #fff;}
-			
-			a.fb {background-color: #3b5998;}	
-			a.sc {background-color: #1e90ff;}
-			b#bialy	{color: white;}
-			b#zolty {color: yellow;}
-			h2#supercars {color: transparent;}
-			h2#learnmore {color: transparent;}
+body {
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family: "robotoregular", Tahoma, Arial, sans-serif;
+    color: rgba(255, 255, 100, 0.9);
+}
 
-			div#logowanie {width:210px;
-						height:225px;
-						margin: -100px 0px 0px 900px;
-			}
-			div#szukaj {width: 90px;
-				height: 200px;
-				margin: 0px 0px 0px 1185px;
-			}
-			div.col-lg-4 {width: 250px;}
-			div.jumbotron {background-color: #1e90ff;
-				margin: 0px 0px 0px 0px;
-				width:100%;
-				height:400px;
-			}
-			legend {color: #e16f00;}
-			fieldset {width:210px;
-					height:225px;
-					border:none;
-					background-color: #00baff;
-					color: #fff700;
-					text-align: center;
-					padding: 5px 5px 100px 0px;
+.main-bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
 
-			}
-			fieldset>ol {list-style: none;}
-			fieldset input {display:block;
-					color:#666;
-			}
-			fieldset, input, legend {border-radius: 5px;
-				-moz-border-radius: 5px;
-			}
-			input#username {width:100px;}
-			
-			div.container-fluid {position:fixed;
-			 					z-index:2;
-			 					width:1450px;
-			 					height:100px;
-			}
-			ul.nav.nav-pills {width:1450px;
-				height:100px;}
+.main-bg img,
+header {
+    width: 100%;
+}
 
-			aside {height: 150px;
-				width: 200px;
-				background-color: orange;
-				margin: -700px 0px 0px -5px;
-				text-align: center;}
-			div#corvette {margin: -150px 0px 0px 450px;}
 
-			h2 {margin:10px 0px 0px 0px;}
-			h2#tostrona {color:#fff700;}
-			font#czerwony {color:red;}
-			div#s1 {margin: 0px 0px 0px 310px;}
-			font#bialy {color:white;}
-			
-			h2#kontakt {color:transparent;}
-			nav#stopka {background-color:#00baff;
-				width:100%;
-				height:100%;}
-			footer {color:#00baff;
-					width: 100%;
-					height: 700px;
-					clear:both;
-					margin:200px 0px 0px 0px;
-				}
-				p#copyright {color:#fff700;}
-				p#home {color:white;}
-		
+/* logo */
+
+div#logo img {
+    width: 100px;
+    height: 60px;
+}
+
+
+/* hamburger */
+
+.hamburger-container img {
+    width: 50px;
+    height: 50px;
+    margin: -25px 0px 0px 0px
+}
+
+#witam {
+    color: rgba(193, 255, 25, 0.9);
+    text-align: center;
+    margin: 100px 40px;
+    line-height: 50px;
+}
+
+.supercars {
+    margin:-60px 0px 0px 0px
+}
+
+#sublime {
+    color: rgba(251, 147, 20, 1);
+    background: rgba(0, 0, 0, 0.5)
+}
+
+h1,
+h2 {
+    width: 75%;
+}
+
+nav {
+    display: block;
+    list-style: none;
+    width: 100%;
+    height: 85px;
+    background: rgba(255, 0, 0, 0.55)
+}
+
+.nav-container nav li {
+    display: inline-block;
+    margin: -50px 0px 0px 0px
+}
+
+nav li a {}
+
+nav li a:hover {
+    background-color: #FF5719 !important;
+    color: #337ab7
+}
+
+nav a.sc:hover {
+    background-color: yellow;
+    color: #1e90ff
+}
+
+nav a.fb:hover {
+    background-color: white
+}
+
+a.fb {
+    background-color: #3b5998
+}
+
+a.sc {
+    background-color: #1e90ff
+}
+
+b#bialy:hover {
+    color: #3b5998
+}
+
+b#zolty {
+    color: yellow;
+}
+
+h2#supercars,
+#learnmore,
+#kontakt,
+#s {
+    color: transparent
+}
+
+section,
+#comments {
+    color: #00baff;
+   
+}
+
+a#contact {
+    padding: 0px 0px 100px 0px
+}
+
+div#logowanie {
+    width: 200px;
+    height: 225px;
+    margin:auto
+}
+
+div.input-field {
+    background: green;
+    width: 140px;
+    height: 40px;
+    padding: 5px 0px 0px 0px;
+    margin: 5px 0px 0px 0px
+}
+
+#search {
+    width: 100px;
+    height: 15px;
+    background: transparent;
+    padding: 10px 0px 0px 0px;
+    margin: 0px 0px 0px 30px
+}
+
+div.input-field label {
+    margin: 0px -5px
+}
+
+#close {
+    margin: 5px 0px 0px 0px;
+}
+
+.adv-container {
+    margin: -4px 0px 0px 15px
+}
+
+.s-container{
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 400px;
+}
+
+#section3 {
+    background-color: #1e90ff;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 400px;
+}
+
+legend {
+    color: #e16f00;
+}
+
+fieldset#login {
+    width: 100px;
+    height: 240px;
+    border: none;
+    background-color: #fff;
+    color: #fff700;
+    text-align: center;
+    padding: 5px 5px 90px 0px;
+}
+
+fieldset>ol {
+    list-style: none;
+    margin: 0px 0px 0px -30px
+}
+
+fieldset input {
+    display: block;
+    color: #666;
+}
+
+fieldset,
+input,
+legend {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+input#username,
+input#password {
+    width: 160px;
+}
+
+#btn-learnmore {
+    margin: 0px 50px
+}
+
+#section4 h4 {
+    color:yellow
+}
+
+#about {
+    margin: 20px 90px
+}
+
+div.c-f {
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+}
+
+aside {
+    height: 100px;
+    width: 200px;
+    position:absolute;
+    background-color: orange;
+    margin: 1070px 0px 0px -5px;
+    text-align: center;
+}
+
+#tostrona,
+p#copyright {
+    color: #fff700;
+}
+
+.supercars span:nth-of-type(odd) {
+    color: red;
+}
+
+.supercars {
+    text-align: center;
+}
+
+.supercars span:nth-of-type(even),
+b#bialy,
+p#home {
+    color: white;
+}
+
+nav#stopka {
+    background-color: #00baff;
+    width: 100%;
+    height: 100%;
+}
+
+#stopka img {
+    width: 250px;
+    height: 250px;
+}
+
+footer {
+    color: #00baff;
+    width: 100%;
+    height: 685px;
+    clear: both;
+    margin: 0px 0px 0px 0px;
+}

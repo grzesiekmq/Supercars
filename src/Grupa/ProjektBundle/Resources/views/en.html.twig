@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+		<link rel="shortcut icon" type="image/x-icon" href="{{ asset('bundles/grupaprojekt/images/favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('bundles/grupaprojekt/css/style.css') }}">
+		<script type="text/javascript" src="{{ asset('bundles/grupaprojekt/js/slajd.js') }}"></script>
+		
+
+		<title>Usability project</title>
+	</head>
+	<body data-spy="scroll" data-target=".container-fluid">
+		<script src="{{ asset('bundles/grupaprojekt/js/scrollReveal.min.js') }}"></script>
+		<script>
+		window.sr = new scrollReveal();
+		</script>
+		<header>
+		<div class="container-fluid">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="active"><a href="{{ path ('grupa_projekt_en') }}"><i class="glyphicon glyphicon-home"></i> <b>Home</b></a></li>
+					<li role="presentation" class="active"><a class="sc" href="#supercars"><b id="zolty">Supercars</b></a></li>
+					<li role="presentation" class="active"><a href="../web/faq"><i class="glyphicon glyphicon-scale"></i> <b>FAQ</b></a></li>
+					<li role="presentation" class="active"><a href="http://projekt-usability.prv.pl/forum/"><i class="glyphicon glyphicon-edit"></i> <b>Forum</b></a></li>
+					<li role="presentation" class="active"><a href="#kontakt"><i class="glyphicon glyphicon-earphone"></i> <b>Contact</b></a></li>
+					<li role="presentation" class="active"><a href="../web/help"><i class="glyphicon glyphicon-question-sign"></i> <b>Help</b></a></li>
+					<li role="presentation"><a class="fb" href="https://www.facebook.com/01super.cars/?ref=aymt_homepage_panel"><b id="bialy">Check out on Facebook</b></a></li>
+					<li role="presentation" class="active"><a href=""><b>Comments <br> ( &amp; Suggestions for improvement)</b></a></li>
+					<li role="presentation" class="active"><a href=""><b>Check how this site was evolved</b></a></li>
+					<li role="presentation" class="active"><a href="{{ path ('grupa_projekt_homepage') }}"><img src="http://www.magicznekolo.com/images/strona/flagi/pl_flag0.gif"></a></li>
+					
+					<div align="right" id="szukaj">
+				<form action="../web/search">
+					<div class="row" align="right">
+						<div class="col-lg-4">
+							<div class="input-group">
+								<input type="text" class="form-control">
+								<span class="input-group-btn">
+									<button class="btn btn-primary">Search</button>
+								</span>
+							</div>
+						</div>
+				<a href="../web/advancedsearch">Advanced</a>
+					</div>
+				</form>
+			</div>
+			
+					
+				</ul>
+			
+			</div>
+			<br>
+		
+			<img src="{{ asset('bundles/grupaprojekt/images/Sc.png') }}" width="300" height="150">
+			<h1 id="witam">Welcome on this site!</h1> 
+			<div id="s1"><h1><font id="czerwony"> S</font><font id="bialy">u</font><font id="czerwony">p</font><font id="bialy">e</font><font id="czerwony">r</font><font id="bialy">c</font><font id="czerwony">a</font><font id="bialy">r</font><font id="czerwony">s</font></h1>
+			</div>
+			
+			<div align="right" id="logowanie">
+			<form method="post" action="/login">
+				<fieldset id="login">
+					<legend>Login</legend>
+					<ol>
+						<li>
+							<label for="username">Username</label>
+							<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+							<input type="text" id="username" name="username" placeholder="Provide username">
+						</li>
+						<li>
+							<label for="password">Password</label>
+							<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-log-in"></i></span>
+							<input type="password" id="password" name="password" value="" autocomplete="off" placeholder="Provide passwd"/>
+						</li>
+						<br>
+						<li>
+							<input type="submit" class="btn btn-primary" value="Log in">
+						</li>
+					</ol>
+				</fieldset>
+			</form>
+			</div>
+		
+		<div class="jumbotron">
+			<h2 id="supercars">A</h2>
+			<h2><font id="czerwony"> S</font><font id="bialy">u</font><font id="czerwony">p</font><font id="bialy">e</font><font id="czerwony">r</font><font id="bialy">c</font><font id="czerwony">a</font><font id="bialy">r</font><font id="czerwony">s</font></h2> <h2 id="tostrona">is all about supercars :)</h2>
+			<div id="corvette"><img src="http://www.dreamcarsite.com/photos/cars01/2013-chevrolet-corvette-z06/2013-chevrolet-corvette-z06-h.jpg">
+			</div>
+			<a href="#learnmore"><p data-sr="move 50px" class="btn btn-primary btn-lg" role="button"><i class="glyphicon glyphicon-chevron-down"></i>Learn more</p></a>
+			
+			
+		</div>
+		</header>
+		<section>
+		<h2 id="learnmore">A</h2>
+		<h3>The most wildest beasts</h3>
+	Content of this site is a collection of supercars.<br>
+	Among huge quantity of available models of cars I selected them according to visual aspect.
+	</div>
+	<br>
+	<p class="btn btn-primary" role="button">Learn more in detail (makes, models)</p>
+	<a href="#kontakt"><p data-sr="move 50px" class="btn btn-primary btn-lg" role="button"><i class="glyphicon glyphicon-chevron-down"></i>About</p></a>
+	</section>
+			
+			<br>
+			
+
+			
+			
+			
+
+
+		<aside>
+			
+			<a href="https://www.google.com/?gfe_rd=cr&ei=6AKyVuzmI7Go8wfPso-gDw&gws_rd=ssl,cr&fg=1"><b>Go to Google</b></a><br>
+			<a href=""><b>Add to bookmarks</b></a>
+		</aside>
+
+		
+	
+
+
+
+
+		
+
+ 
+				
+			
+			
+		
+		
+
+		<h5 align="right" style="font-weight:bold; padding:450px 5px 0px 0px; box-sizing:border-box"><a href="#">UP</h5>
+		<h1 align="right" style="margin:0px -100px 0px 350px"><span class="glyphicon glyphicon-circle-arrow-up"></span></h1></a>
+
+		<footer>
+			<nav id="stopka">
+				<h2 id="kontakt">A</h2>
+				<a href="../web/about"><b>About this site</b></a><br>
+				<img src="http://www.myiconfinder.com/uploads/iconsets/4da56c6e4199ee90672a68bb2f18884f-Browser.png" height="500" width="700">
+				<a href="../web/contact"><b>Contact</b></a>
+
+				<br>
+				 <p id="copyright"><i class="glyphicon glyphicon-copyright-mark"></i><b> 2016 by GF. All rights <img src="http://tropicielokazji.pl/images/networks/9560348351422814439674.png">.</b></p>
+				
+			
+
+
+			</nav>
+
+		</footer>
+
+		</body>
+

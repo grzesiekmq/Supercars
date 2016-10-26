@@ -1,15 +1,43 @@
-{% extends "GrupaProjektBundle::layout.html.twig" %}
+<div class="row">
+	<div class="col s6" id="logo">
+		<img src="{{ asset('bundles/grupaprojekt/images/Sc.png') }}">
+	</div>
+	<div class="col s6">
+		<form action="../web/search">
+					<div class="input-field">
+						<input type="search" id="search" required>
+						<label for="search"><i class="material-icons">search</i></label>
+          				<i class="material-icons" id="close">close</i>
+					</div>
+		<div class="adv-container">	
+			<a href="../web/advancedsearch" id="advanced">Zaawansowane</a>
+		</div>
+		</form>
+	</div>
+</div>
 
-{% block menu %}
-<!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<div class="hamburger-container">
+	<a class="hide-on-med-and-up" title="menu" href=""><img src="http://icons.iconarchive.com/icons/pixelkit/tasty-bites/128/hamburger-icon.png"></a>
+</div>
+<div class="nav-container">
+	<nav class="hide-on-small-only">
+		<li role="presentation"><a href="{{ path ('homepage') }}"><i class="glyphicon glyphicon-home"></i> <b>STRONA GŁÓWNA</b></a></li>
+		<li role="presentation"><a class="sc" href="#supercars"><b id="zolty">SUPERCARS</b></a></li>
+		<li role="presentation"><a href="../web/faq"><i class="glyphicon glyphicon-scale"></i> <b>FAQ</b></a></li>
+		<li role="presentation"><a href="http://projekt-usability.prv.pl/forum/"><i class="glyphicon glyphicon-edit"></i> <b>FORUM</b></a></li>
+		<li role="presentation"><a href="#kontakt"><i class="glyphicon glyphicon-earphone"></i> <b>KONTAKT</b></a></li>
+		<li role="presentation"><a href="../web/help"><i class="glyphicon glyphicon-question-sign"></i> <b>POMOC</b></a></li>
+		<li role="presentation"><a class="fb" href="https://www.facebook.com/01super.cars/?ref=aymt_homepage_panel"><b id="bialy">SPRAWDŹ NA FACEBOOKU</b></a></li>
+		<!-- <li role="presentation"><a href=""><b>SPRAWDŹ JAK TA STRONA POWSTAWAŁA</b></a></li> -->
+		<li role="presentation"><a href="#disqus_thread"><b>KOMENTARZE</b></a></li>
+		<li role="presentation"><a href="{{ path ('en') }}"><img src="http://www.kayakwithwhales.ca/images/english.jpg"></a></li>
+	</nav>
+</div>
+					
+	
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> 
-
-  <link rel="stylesheet" type="text/css" href="{{ asset('bundles/grupaprojekt/css/style.css') }}">
-  
-{% endblock %}
+			
+					
+				
+			

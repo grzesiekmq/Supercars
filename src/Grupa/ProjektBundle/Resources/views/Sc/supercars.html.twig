@@ -1,0 +1,58 @@
+<html>
+	<head>
+			{% include "GrupaProjektBundle::head.html.twig" %}
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/grupaprojekt/css/sc.css') }}">
+
+	</head>
+	<body class="teal">
+{% include "GrupaProjektBundle::menu.html.twig" %}
+<br>
+<br>
+
+
+
+	
+
+
+<h3>A - Z<br>
+9FF - Zenvo</h3>
+	
+<div class="row">
+	<div class="col s6">
+	<h4>Marka</h4>
+	</div>
+	<div class="col s6">
+ 	<h4>Logo</h4>
+ 	</div>
+</div>
+<ul class="collapsible" data-collapsible="accordion">
+	<li>
+		<div class="collapsible-header">Samochody</div>
+		<div class="collapsible-body">
+	<table>
+	<div class="row">
+
+	{% for make in makes %}
+
+	<a href="{{ path('supercars_marki', {'make': make}) }}">
+		<div class="col s6">
+		{{make}} 
+		</div>
+		<div class="col s6">
+ 			<img src="{{logos ~ make ~ gif}}">
+		</div>
+	</a>
+
+	{% endfor %}
+	</div>
+	</table>
+	</div>
+	</li>
+</ul>
+			<h5 class="right-align"><a href="#" class="waves-effect waves-light btn">Powrót do góry</a></h5>
+
+			{% include "GrupaProjektBundle::footer.html.twig" %}
+
+</body>
+</html>
+

@@ -1,169 +1,155 @@
 <!DOCTYPE html>
-<meta charset="UTF-8"/>
 <html>
 	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-
-		<link rel="shortcut icon" type="image/x-icon" href="{{ asset('bundles/grupaprojekt/images/favicon.ico') }}">
+		{% include "GrupaProjektBundle::head.html.twig" %}
 		<link rel="stylesheet" type="text/css" href="{{ asset('bundles/grupaprojekt/css/style.css') }}">
-		<script type="text/javascript" src="{{ asset('bundles/grupaprojekt/js/slajd.js') }}"></script>
 		
-
-		<title>Projekt usability</title>
 	</head>
-	<body data-spy="scroll" data-target=".container-fluid">
-		<script src="{{ asset('bundles/grupaprojekt/js/scrollReveal.min.js') }}"></script>
-		<script>
-		window.sr = new scrollReveal();
-		</script>
-		<header>
-		<div class="container-fluid">
-				<ul class="nav nav-pills">
-					<li role="presentation" class="active"><a href="{{ path ('grupa_projekt_homepage') }}"><i class="glyphicon glyphicon-home"></i> <b>Strona główna</b></a></li>
-					<li role="presentation" class"active"><a class="sc" href="#supercars"><b id="zolty">Supercars</b></a></li>
-					<li role="presentation" class="active"><a href="../web/faq"><i class="glyphicon glyphicon-scale"></i> <b>FAQ</b></a></li>
-					<li role="presentation" class="active"><a href="http://projekt-usability.prv.pl/forum/"><i class="glyphicon glyphicon-edit"></i> <b>Forum</b></a></li>
-					<li role="presentation" class="active"><a href="#kontakt"><i class="glyphicon glyphicon-earphone"></i> <b>Kontakt</b></a></li>
-					<li role="presentation" class="active"><a href="../web/help"><i class="glyphicon glyphicon-question-sign"></i> <b>Pomoc</b></a></li>
-					<li role="presentation" class"active"><a class="fb" href="https://www.facebook.com/01super.cars/?ref=aymt_homepage_panel"><b id="bialy">Sprawdź na Facebooku</b></a></li>
-					<li role="presentation" class"active"><a href=""><b>Komentarze <br> ( + Propozycje poprawy strony)</b></a></li>
-					<li role="presentation" class"active"><a href=""><b>Sprawdź jak ta strona powstawała</b></a>
-					<li role="presentation" class"active"><a href=""><b>Opinie</b></a></li>
-					<div align="right" id="szukaj">
-				<form action="../web/search">
-					<div class="row" align="right">
-						<div class="col-lg-4">
-							<div class="input-group">
-								<input type="text" class="form-control">
-								<span class="input-group-btn">
-									<button class="btn btn-primary">Szukaj</button>
-								</span>
-							</div>
-						</div>
-				<a href="../web/advancedsearch">Zaawansowane</a>
-					</div>
-				</form>
-			</div>
-			
-					
-				</ul>
-			
-			</div>
-			<br>
-		
-			<img src="{{ asset('bundles/grupaprojekt/images/Sc.png') }}" width="300" height="150">
-			<h1 id="witam">Witam na stronie</h1> 
-			<div id="s1"><h1><font id="czerwony"> S</font><font id="bialy">u</font><font id="czerwony">p</font><font id="bialy">e</font><font id="czerwony">r</font><font id="bialy">c</font><font id="czerwony">a</font><font id="bialy">r</font><font id="czerwony">s</font></h1>
-			</div>
-			
-			<div align="right" id="logowanie">
-			<form method="post" action="/login">
-				<fieldset id="login">
-					<legend>Logowanie</legend>
-					<ol>
-						<li>
-							<label for="username">Nazwa użytkownika</label>
-							<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
-							<input type="text" id="username" name="username" placeholder="Podaj nazwę użytkownika">
-						</li>
-						<li>
-							<label for="password">Hasło</label>
-							<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-log-in"></i></span>
-							<input type="password" id="password" name="password" value="" autocomplete="off" placeholder="Podaj hasło"/>
-						</li>
-						<br>
-						<li>
-							<input type="submit" class="btn btn-primary" value="Zaloguj">
-						</li>
-					</ol>
-				</fieldset>
-			</form>
-			</div>
-		
-		<div class="jumbotron">
-			<h2 id="supercars">A</h2>
-			<h2><font id="czerwony"> S</font><font id="bialy">u</font><font id="czerwony">p</font><font id="bialy">e</font><font id="czerwony">r</font><font id="bialy">c</font><font id="czerwony">a</font><font id="bialy">r</font><font id="czerwony">s</font></h2> <h2 id="tostrona"> to strona o supersamochodach</h2>
-			<div id="corvette"><img src="http://www.dreamcarsite.com/photos/cars01/2013-chevrolet-corvette-z06/2013-chevrolet-corvette-z06-h.jpg">
-			</div>
-			<a href="#learnmore"><p data-sr="move 50px" class="btn btn-primary btn-lg" role="button">Dowiedz się więcej</p></a>
-			
-		</div>
-		</header>
-		<section>
-		<h2 id="learnmore">A</h2>
-		<h3>Najdziksze bestie</h3>
-	Zawartością strony jest kolekcja samochodów sportowych.<br>
-	Spośród ogromnej ilości dostępnych modeli aut wybrałem ,<br>
-	które według mnie są najlepsze pod względem wizualnym.
-	</div>
-	<br>
-	<p class="btn btn-primary" role="button">Dowiedz się jeszcze więcej (marki, modele)</p>
-	</section>
-			
-			<br>
-			
-
-			
-			
-			
-
-
-		<aside>
-			<a href=""><b>Zmień język</b></a><br>
-			<a href=""><b>Przejdź do Google</b></a><br>
-			<a href=""><b>Dodaj stronę do zakładek</b></a>
-		</aside>
-
-		
 	
-
-
-
-
+	<body class="teal">
+		<header>
+			<div class="main-bg">
+				<img src="{{ asset('bundles/grupaprojekt/images/lambo.jpg') }}">
+			</div>
+			
+			{% include "GrupaProjektBundle::menu.html.twig" %}
 		
-
- 
+		</header>
+			<aside>
+				<ul>
+					<li>
+						<a href="http://www.google.pl"><b>Przejdź do Google</b></a>
+					</li>
+					<li>
+						<a href=""><b>Dodaj stronę do zakładek</b></a>
+					</li>
+				</ul>
+			</aside>
+		<main>
+			<section id="section1">
+				<h1 id="witam">Witam na stronie</h1> 
+					<div class="supercars">
+						<h3>
+							<span>S</span>
+							<span>u</span>
+							<span>p</span>
+							<span>e</span>
+							<span>r</span>
+							<span>c</span>
+							<span>a</span>
+							<span>r</span>
+							<span>s</span>
+						</h3>		
+					</div>
+			</section>
+		
+		
+			<section id="section2">
+				<h3 class="center-align" id="st3">Zapraszam też na stronę</h3> 
+				<h3 class="center-align"><a href="https://www.facebook.com/st3pl" id="sublime">Sublime Text 3</a></h3>
 				
+				<div id="logowanie">
+					<form method="post" action="/login">
+						<fieldset id="login">
+							<legend>Logowanie</legend>
+							<ol>
+								<li>
+									<label for="username">Nazwa użytkownika</label>
+									<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+									<input type="text" id="username" name="username">
+								</li>
+								<li>
+									<label for="password">Hasło</label>
+									<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-log-in"></i></span>
+									<input type="password" id="password" name="password" value="" autocomplete="off"/>
+								</li>
+							
+								<li>
+									<button type="submit" class="waves-effect waves-light btn">Zaloguj<i class="material-icons right">send</i></button>
+								</li>
+							</ol>
+						</fieldset>
+					</form>
+				</div>
+			</section>
+				
+			<section id="section3" class="s-container">
+				<h2 id="s">A</h2>
+				
+					<div class="supercars">
+						<h3>
+							<span>S</span>
+							<span>u</span>
+							<span>p</span>
+							<span>e</span>
+							<span>r</span>
+							<span>c</span>
+							<span>a</span>
+							<span>r</span>
+							<span>s</span>
+						</h3>
+					</div>
+
+				<h4 class="center-align" id="tostrona"> to strona o supersamochodach</h4>
+					
+				<a href="#learnmore" id="btn-learnmore" class="waves-effect waves-light btn" role="button">Dowiedz się więcej</a>
+			</section>		
 			
+			<section id="section4">
+			<h6 id="learnmore">A</h6>
+			<h4>Najdziksze bestie </h4>
+			<p class="flow-text">Zawartością strony jest kolekcja samochodów sportowych.
+			Spośród ogromnej ilości dostępnych modeli aut wybrałem te, które według mnie są najlepsze pod względem wizualnym.
+			</p>
+			<a href="{{ path('car') }}" class="waves-effect waves-light btn">Dowiedz się jeszcze więcej (marki, modele)</a>
+		
+
+	                                
+			<a href="#kontakt" class="waves-effect waves-light btn" id="about" role="button"> O stronie</a>
+
+
+			
+			
+			
+			
+			<!-- komentarze -->
+			<h2 id="comments">Komentarze</h2>
+				<div id="disqus_thread"></div>
+			<script>
+
+			/**
+			*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+			/*
+			var disqus_config = function () {
+			this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
+			*/
+			(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = '//projekt-usability.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+			})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+				
+				
+				
+			<h5 class="right-align"><a href="#" class="waves-effect waves-light btn">Powrót do góry</a></h5>
+			
+
+			</section>
+		</main>
+		{% include "GrupaProjektBundle::footer.html.twig" %}
+
+
 			
 		
 		
+		
 
-		<h5 align="right" style="font-weight:bold; padding:450px 5px 0px 0px; box-sizing:border-box"><a href="#">Powrót do góry</h5>
-		<h1 align="right" style="margin:0px -100px 0px 350px"><span class="glyphicon glyphicon-circle-arrow-up"></span></h1></a>
+	</body>
 
-		<footer>
-			<nav id="stopka">
-				<h2 id="kontakt">A</h2>
-				<a href="../web/about"><b>O stronie</b></a><br>
-				<img src="http://www.myiconfinder.com/uploads/iconsets/4da56c6e4199ee90672a68bb2f18884f-Browser.png" height="500" width="700">
-				<a href="../web/contact"><b>Kontakt</b></a>
-
-				<br>
-				<i class="glyphicon glyphicon-copyright-mark"></i> <p id="copyright"><b>2015 by GF. Wszelkie prawa zastrzeżone.</b></p>
-				<br>
-				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
-				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
-				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
-				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
-				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
-				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
-				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
-				<br><br><br>anghfbdhfdjhfdjfdjhfjhbdfbjhfdjhbdf
-			
-
-
-			</nav>
-
-		</footer>
-
-		</body>
-
+</html>
