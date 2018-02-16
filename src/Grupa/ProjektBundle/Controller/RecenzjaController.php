@@ -1,1 +1,0 @@
-<?phpnamespace Grupa\ProjektBundle\Controller;use Symfony\Bundle\FrameworkBundle\Controller\Controller;use Symfony\Component\HttpFoundation\Request;class RecenzjaController extends Controller{	public function showRecenzjaLogAction()	{		return $this->render('GrupaProjektBundle:Recenzja:recenzja.zalogowany.html.twig');	}}
